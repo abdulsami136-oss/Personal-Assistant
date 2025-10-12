@@ -3,7 +3,7 @@ from openai import OpenAI
 
 def aiProcess(command):
     client = OpenAI(
-        api_key="sk-8e13b4f672aa4e6b89a77d04dc1797ae",
+        api_key= api_key,
         base_url="https://api.deepseek.com"
     )
 
@@ -32,4 +32,5 @@ def processCommand(command):
     else:
         output = aiProcess(command)
         return output, None
+
 
